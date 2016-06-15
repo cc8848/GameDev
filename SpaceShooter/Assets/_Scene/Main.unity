@@ -236,6 +236,9 @@ MonoBehaviour:
     xMin: -9
     xMax: 9
   tilt: 4
+  shot: {fileID: 100000, guid: 1e64bc79f47e6554292fffbca67698be, type: 2}
+  shotSpawn: {fileID: 255023180}
+  fireRate: 0.25
 --- !u!1 &255023179
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e245517c445b2e4eae777278a9f057e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &1806578381
 GameObject:
   m_ObjectHideFlags: 0

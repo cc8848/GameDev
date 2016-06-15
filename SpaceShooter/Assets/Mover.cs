@@ -3,13 +3,20 @@ using System.Collections;
 
 public class Mover : MonoBehaviour {
 
+    public float speed;
 	// Use this for initialization
-	void Start () {
-	
+	void Start ()
+    {
+        GetComponent<Rigidbody>().velocity = transform.forward * speed;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+        GetComponent<Rigidbody>().velocity = transform.forward * speed;
+    }
+
+    void fixedUpdate()
+    {
+        GetComponent<Rigidbody>().velocity = transform.forward * speed;
+    }
 }

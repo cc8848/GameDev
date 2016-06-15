@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour {
 
     void update()
     {
-        if (Input.GetButton("Fire1") && Time.time > nextFire)
+        if (Input.GetButton(" ") && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
             //GameObject clone =
