@@ -14,17 +14,16 @@ public class PlayerController : MonoBehaviour {
 
     public GameObject shot;
     public Transform shotSpawn;
-    public float fireRate;
-    private float nextFire;
+
+    public float fireRate = 0.5F;
+    private float nextFire = 0.0F;
 
     void update()
     {
-        if (Input.GetButton(" ") && Time.time > nextFire)
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
-            //GameObject clone =
-            Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-               // as GameObject;
+            GameObject clone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation) as GameObject;
         }
     }
 
